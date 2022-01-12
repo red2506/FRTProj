@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>Task Tracker</title>
+<style type="text/css"> 
+#task {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: black;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+}
+</style>
+<link rel="stylesheet" href="assets/css/Tracking.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<div class="navbar-collapse collapse">
+	<ul class="nav navbar-nav pull-right">
+	<li><a href="index.html"> <img src="assets/images/logo.png" alt="Asclepius HTML5 template"></a></li>
+		<li><a style="color:white;" href="about.html" >  Activity  </a></li>
+		<li><a style="color:MediumSeaGreen;" href="sidebar-left.html" >  Fitness  </a></li>
+		<li><a style="color:MediumSeaGreen;" href="sidebar-right.html">  Nutrition  </a></li>
+		<li><a style="color:MediumSeaGreen;" href="contact.html">  Contact  </a></li>
+		<li><a style="color:MediumSeaGreen;" class="btn" href="Pomodoro.html">  Start Timer  </a></li>
+	</ul>
+</div>
+<body>
+	<div class="container">
+
+		<p>
+			<label for="new-task" class="middle">Add Task</label> <input
+				id="new-task" type="text">
+			<button id = "task"><i class='fas fa-plus'></i>Add Task</button>
+		</p>
+
+
+		<h3 style="color:tomato;"class="middle">Todo</h3>
+		<ul id="incomplete-tasks">
+		</ul>
+
+		<h3 style="color:DodgerBlue;"class="middle">Completed Tasks</h3>
+		<ul id="completed-tasks">
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="assets/js/Tracking.js"></script>
+
+</body>
+
+</html>
